@@ -1,0 +1,106 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=bfe28430-ac5a-404b-92ab-ed66b54999ca");
+@font-face{
+font-family:"helvetica neue medium";
+src:url("../fonts/07fe0fec-b63f-4963-8ee1-535528b67fdb.eot?#iefix");
+src:url("../fonts/07fe0fec-b63f-4963-8ee1-535528b67fdb.eot?#iefix") format("eot"),url("../fonts/60be5c39-863e-40cb-9434-6ebafb62ab2b.woff") format("woff"),url("../fonts/4c6503c9-859b-4d3b-a1d5-2d42e1222415.ttf") format("truetype"),url("../fonts/36c182c6-ef98-4021-9b0d-d63122c2bbf5.svg#36c182c6-ef98-4021-9b0d-d63122c2bbf5") format("svg");
+}
+@font-face{
+font-family:"helvetica neue medium condensed";
+src:url("../fonts/3a605871-b94d-4161-a394-bb2cfc975df7.eot?#iefix");
+src:url("../fonts/3a605871-b94d-4161-a394-bb2cfc975df7.eot?#iefix") format("eot"),url("../fonts/aef05e22-e1d4-4e59-bc2e-a71c13c26cca.woff") format("woff"),url("../fonts/b785b1cf-24fa-44c9-8c93-d8e2d6912c47.ttf") format("truetype"),url("../fonts/5ab0c585-fb4b-43d9-abb0-b92f452b1284.svg#5ab0c585-fb4b-43d9-abb0-b92f452b1284") format("svg");
+}
+
+$med: "helvetica neue medium", Helvetica, sans-serif;
+$med-cond: "helvetica neue medium condensed", Helvetica, sans-serif;
+$blue1: #019ed8;
+$blue2: #0075b5;
+$blue3: #00aeef;
+$black: #000;
+$white: #fff;
+$grey1: #f4f4f4;
+$grey2: #f5f5f5;
+$grey3: #f9f9f9;
+
+@mixin bg-gradient-stacked {
+	background: #f9f9f9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f9f9f9 0%, #f8f8f8 79%, #f7f7f7 82%, #f6f6f6 85%, #f5f5f5 88%, #f4f4f4 91%, #f3f3f3 94%, #f2f2f2 97%, #f1f1f1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(79%,#f8f8f8), color-stop(82%,#f7f7f7), color-stop(85%,#f6f6f6), color-stop(88%,#f5f5f5), color-stop(91%,#f4f4f4), color-stop(94%,#f3f3f3), color-stop(97%,#f2f2f2), color-stop(100%,#f1f1f1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f9f9f9 0%,#f8f8f8 79%,#f7f7f7 82%,#f6f6f6 85%,#f5f5f5 88%,#f4f4f4 91%,#f3f3f3 94%,#f2f2f2 97%,#f1f1f1 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f9f9f9 0%,#f8f8f8 79%,#f7f7f7 82%,#f6f6f6 85%,#f5f5f5 88%,#f4f4f4 91%,#f3f3f3 94%,#f2f2f2 97%,#f1f1f1 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f9f9f9 0%,#f8f8f8 79%,#f7f7f7 82%,#f6f6f6 85%,#f5f5f5 88%,#f4f4f4 91%,#f3f3f3 94%,#f2f2f2 97%,#f1f1f1 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f9f9f9 0%,#f8f8f8 79%,#f7f7f7 82%,#f6f6f6 85%,#f5f5f5 88%,#f4f4f4 91%,#f3f3f3 94%,#f2f2f2 97%,#f1f1f1 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
+}
+
+body {
+	color: $black;
+	line-height: 1em;
+	background: $white;
+}
+h1 {
+	font: 90px $med-cond; 
+	line-height: .9em;
+}
+h2 {
+	font: 26px $med;
+	line-height: 1.4em;
+}
+h4 {
+	font: 15px $med-cond; 
+	text-transform: uppercase;
+}
+p {
+	font: 12px $med;
+	opacity: .6;
+	margin-top: 35px;
+}
+.container {
+	margin:15px auto;
+	width: 90%;
+	background: $grey3;
+}
+.content {padding: 80px 60px;}
+.icon {position: relative; margin-bottom:20px;}
+.clip {position: absolute; top: 0; left: 0;}
+
+
+#visits {
+	@include bg-gradient-stacked;
+	margin:0 auto;
+	.icon {width: 26px; height: 26px;}
+	.clip {clip:rect(0 26px 26px 0);}
+	h1, h2 {
+		color: $blue1;
+	}
+}
+#uniques {
+	@include bg-gradient-stacked;
+	margin:0 auto;
+	/*.icon {width: 26px; height: 26px;}*/
+	.clip {clip:rect(0 48px 26px 26px); width: 26px; height: 26px;}
+	h1, h2 {
+		color: $blue2;
+	}
+}
+#time {
+	margin:0 auto;
+	.icon {width: 22px; height: 26px;}
+	.clip {clip:rect(0 48px 26px 26px);}
+	h1, h2 {
+		color: $blue3;
+	}
+}
+
+
+
+
+
+
+

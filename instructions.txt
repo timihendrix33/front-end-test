@@ -1,0 +1,12 @@
+Use the 2 layer comps in the assessment.psd (creative/assessment.psd) for visual layout and style guide.
+
+All images should be combined to a sprite.
+
+Use sass to create the styles.css as your external style sheet.
+
+Use javascript and the provided JSON (stats.json) to display all the dynamic content (text) within each 
+section of the module and to add functionality to the tabs "Summary" and "Member page traffic"
+
+You may use jquery or any other JS framework
+
+Bonus - convert the module to render responsively on mobile/tablet and incorporate any animations as you see fit. 
