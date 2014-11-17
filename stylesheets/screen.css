@@ -167,13 +167,19 @@ section .wrap {
 }
 
 /* line 119, ../sass/screen.scss */
-.icon {
+.icon-wrap {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+/* line 123, ../sass/screen.scss */
+.icon-wrap .icon {
   position: relative;
-  margin-bottom: 20px;
   background-image: url(../img/sprite.png);
+  background-repeat: none;
 }
 
-/* line 122, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 #logins, #visits {
   background: #f9f9f9;
   /* Old browsers */
@@ -192,12 +198,12 @@ section .wrap {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f1f1f1',GradientType=0 );
   /* IE6-9 */
 }
-/* line 124, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 #logins h1, #logins h2, #visits h1, #visits h2 {
   color: #019ed8;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 #searches, #uniques {
   background: #f9f9f9;
   /* Old browsers */
@@ -216,45 +222,45 @@ section .wrap {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f1f1f1',GradientType=0 );
   /* IE6-9 */
 }
-/* line 130, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 #searches h1, #searches h2, #uniques h1, #uniques h2 {
   color: #0075b5;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 #views h1, #views h2, #time h1, #time h2 {
   color: #00aeef;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 #visits .icon {
   width: 26px;
   height: 26px;
   background-position: 0 0;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 #uniques .icon, #searches .icon {
   width: 22px;
   height: 26px;
   background-position: -26px 0;
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 #time .icon {
   width: 32px;
-  height: 33px;
+  height: 32px;
   background-position: -48px 0;
 }
 
-/* line 161, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 #logins .icon {
   width: 31px;
   height: 32px;
   background-position: -80px 0;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 #views .icon {
   width: 47px;
   height: 26px;
@@ -262,23 +268,23 @@ section .wrap {
 }
 
 @media (min-width: 767px) {
-  /* line 176, ../sass/screen.scss */
+  /* line 185, ../sass/screen.scss */
   .container, nav {
     width: 100%;
     padding: 0 15px;
   }
 
-  /* line 180, ../sass/screen.scss */
+  /* line 189, ../sass/screen.scss */
   section {
     float: left;
     width: 33%;
   }
-  /* line 183, ../sass/screen.scss */
+  /* line 192, ../sass/screen.scss */
   section .wrap {
     padding: 80px 30px;
   }
 
-  /* line 187, ../sass/screen.scss */
+  /* line 196, ../sass/screen.scss */
   #visits, #uniques {
     background: #f9f9f9;
     /* Old browsers */
@@ -299,7 +305,7 @@ section .wrap {
   }
 }
 @media (min-width: 991px) {
-  /* line 193, ../sass/screen.scss */
+  /* line 202, ../sass/screen.scss */
   section .wrap {
     padding: 80px 60px;
   }
