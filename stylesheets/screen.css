@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=bfe28430-ac5a-404b-92ab-ed66b54999ca");
-/* line 5, ../../../../.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,46 +25,46 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+/* line 116, ../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
@@ -73,24 +73,47 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url("../fonts/07fe0fec-b63f-4963-8ee1-535528b67fdb.eot?#iefix");
   src: url("../fonts/07fe0fec-b63f-4963-8ee1-535528b67fdb.eot?#iefix") format("eot"), url("../fonts/60be5c39-863e-40cb-9434-6ebafb62ab2b.woff") format("woff"), url("../fonts/4c6503c9-859b-4d3b-a1d5-2d42e1222415.ttf") format("truetype"), url("../fonts/36c182c6-ef98-4021-9b0d-d63122c2bbf5.svg#36c182c6-ef98-4021-9b0d-d63122c2bbf5") format("svg");
 }
+
 @font-face {
   font-family: "helvetica neue medium condensed";
   src: url("../fonts/3a605871-b94d-4161-a394-bb2cfc975df7.eot?#iefix");
   src: url("../fonts/3a605871-b94d-4161-a394-bb2cfc975df7.eot?#iefix") format("eot"), url("../fonts/aef05e22-e1d4-4e59-bc2e-a71c13c26cca.woff") format("woff"), url("../fonts/b785b1cf-24fa-44c9-8c93-d8e2d6912c47.ttf") format("truetype"), url("../fonts/5ab0c585-fb4b-43d9-abb0-b92f452b1284.svg#5ab0c585-fb4b-43d9-abb0-b92f452b1284") format("svg");
 }
-/* line 54, ../sass/screen.scss */
-body {
-  color: #000;
-  line-height: 1em;
-  background: #fff;
-}
 
 /* line 59, ../sass/screen.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 63, ../sass/screen.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 68, ../sass/screen.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 72, ../sass/screen.scss */
+body {
+  color: black;
+  line-height: 1em;
+  background: white;
+}
+
+/* line 77, ../sass/screen.scss */
 h1 {
   font: 90px "helvetica neue medium condensed", Helvetica, sans-serif;
   line-height: .9em;
 }
-/* line 62, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 h1 span {
   margin-left: -10px;
   font-size: 30px;
@@ -98,32 +121,32 @@ h1 span {
   line-height: .9em;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 h2 {
   font: 26px "helvetica neue medium condensed", Helvetica, sans-serif;
   line-height: 1.4em;
 }
-/* line 72, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 h2 span {
   font-size: 18px;
   text-transform: uppercase;
   line-height: 1.4em;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 h3 {
   font: 15px "helvetica neue medium condensed", Helvetica, sans-serif;
   text-transform: uppercase;
 }
 
-/* line 82, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 p {
   font: 12px "helvetica neue medium", Helvetica, sans-serif;
   opacity: .6;
   margin-top: 35px;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .container {
   margin: 15px auto;
   width: 90%;
@@ -131,14 +154,14 @@ p {
   position: relative;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 nav {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
-/* line 98, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 nav li {
   float: left;
   width: 50%;
@@ -148,97 +171,97 @@ nav li {
   text-align: center;
   line-height: 50px;
   background-color: #019ed8;
-  color: #fff;
+  color: white;
 }
-/* line 109, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 nav li.active {
   background: none;
-  color: #000;
+  color: black;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 section {
   overflow: hidden;
   margin: 0 auto;
   background: #f9f9f9;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #f9f9f9 0%, #f8f8f8 79%, #f7f7f7 82%, #f6f6f6 85%, #f5f5f5 88%, #f4f4f4 91%, #f3f3f3 94%, #f2f2f2 97%, #f1f1f1 100%);
+  background: -moz-linear-gradient(top, #f9f9f9 0%, #f8f8f8 79%, #f7f7f7 82%, #f6f6f6 85%, whitesmoke 88%, #f4f4f4 91%, #f3f3f3 94%, #f2f2f2 97%, #f1f1f1 100%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9f9f9), color-stop(79%, #f8f8f8), color-stop(82%, #f7f7f7), color-stop(85%, #f6f6f6), color-stop(88%, #f5f5f5), color-stop(91%, #f4f4f4), color-stop(94%, #f3f3f3), color-stop(97%, #f2f2f2), color-stop(100%, #f1f1f1));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9f9f9), color-stop(79%, #f8f8f8), color-stop(82%, #f7f7f7), color-stop(85%, #f6f6f6), color-stop(88%, whitesmoke), color-stop(91%, #f4f4f4), color-stop(94%, #f3f3f3), color-stop(97%, #f2f2f2), color-stop(100%, #f1f1f1));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #f9f9f9 0%, #f8f8f8 79%, #f7f7f7 82%, #f6f6f6 85%, #f5f5f5 88%, #f4f4f4 91%, #f3f3f3 94%, #f2f2f2 97%, #f1f1f1 100%);
+  background: -webkit-linear-gradient(top, #f9f9f9 0%, #f8f8f8 79%, #f7f7f7 82%, #f6f6f6 85%, whitesmoke 88%, #f4f4f4 91%, #f3f3f3 94%, #f2f2f2 97%, #f1f1f1 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #f9f9f9 0%, #f8f8f8 79%, #f7f7f7 82%, #f6f6f6 85%, #f5f5f5 88%, #f4f4f4 91%, #f3f3f3 94%, #f2f2f2 97%, #f1f1f1 100%);
+  background: -o-linear-gradient(top, #f9f9f9 0%, #f8f8f8 79%, #f7f7f7 82%, #f6f6f6 85%, whitesmoke 88%, #f4f4f4 91%, #f3f3f3 94%, #f2f2f2 97%, #f1f1f1 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #f9f9f9 0%, #f8f8f8 79%, #f7f7f7 82%, #f6f6f6 85%, #f5f5f5 88%, #f4f4f4 91%, #f3f3f3 94%, #f2f2f2 97%, #f1f1f1 100%);
+  background: -ms-linear-gradient(top, #f9f9f9 0%, #f8f8f8 79%, #f7f7f7 82%, #f6f6f6 85%, whitesmoke 88%, #f4f4f4 91%, #f3f3f3 94%, #f2f2f2 97%, #f1f1f1 100%);
   /* IE10+ */
   background: linear-gradient(to bottom, #f9f9f9 0%, #f8f8f8 79%, #f7f7f7 82%, #f6f6f6 85%, #f5f5f5 88%, #f4f4f4 91%, #f3f3f3 94%, #f2f2f2 97%, #f1f1f1 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#f1f1f1',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f1f1f1',GradientType=0 );
   /* IE6-9 */
 }
-/* line 118, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 section .wrap {
   padding: 80px 40px;
 }
 
-/* line 122, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 .icon-wrap {
   width: 40px;
   height: 40px;
   margin-bottom: 10px;
 }
-/* line 126, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .icon-wrap .icon {
   position: relative;
   background-image: url(../img/sprite.png);
   background-repeat: none;
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 section:nth-of-type(1) h1, section:nth-of-type(1) h2 {
   color: #019ed8;
 }
 
-/* line 139, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 section:nth-of-type(2) h1, section:nth-of-type(2) h2 {
   color: #0075b5;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 section:nth-of-type(3) h1, section:nth-of-type(3) h2 {
   color: #00aeef;
 }
 
-/* line 149, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .member section:nth-of-type(1) .icon {
   width: 26px;
   height: 26px;
   background-position: 0 0;
 }
 
-/* line 156, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 section:nth-of-type(2) .icon {
   width: 22px;
   height: 26px;
   background-position: -26px 0;
 }
 
-/* line 163, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .member section:nth-of-type(3) .icon {
   width: 32px;
   height: 32px;
   background-position: -48px 0;
 }
 
-/* line 170, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .summary section:nth-of-type(1) .icon {
   width: 31px;
   height: 32px;
   background-position: -80px 0;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .summary section:nth-of-type(3) .icon {
   width: 47px;
   height: 26px;
@@ -246,40 +269,45 @@ section:nth-of-type(2) .icon {
 }
 
 @media (min-width: 767px) {
-  /* line 185, ../sass/screen.scss */
-  .container, nav {
+  /* line 203, ../sass/screen.scss */
+  .container {
     width: 100%;
-    padding: 0 15px;
+    margin: 0 0 15px 0;
+    padding: 15px 15px 0 15px;
+  }
+  /* line 207, ../sass/screen.scss */
+  .container nav {
+    width: 100%;
   }
 
-  /* line 189, ../sass/screen.scss */
+  /* line 211, ../sass/screen.scss */
   section {
     float: left;
     width: 33%;
     background: #f9f9f9;
     /* Old browsers */
-    background: -moz-linear-gradient(left, #f9f9f9 0%, #f8f8f8 82%, #f7f7f7 85%, #f6f6f6 88%, #f5f5f5 91%, #f4f4f4 94%, #f3f3f3 97%, #f2f2f2 100%);
+    background: -moz-linear-gradient(left, #f9f9f9 0%, #f8f8f8 82%, #f7f7f7 85%, #f6f6f6 88%, whitesmoke 91%, #f4f4f4 94%, #f3f3f3 97%, #f2f2f2 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #f9f9f9), color-stop(82%, #f8f8f8), color-stop(85%, #f7f7f7), color-stop(88%, #f6f6f6), color-stop(91%, #f5f5f5), color-stop(94%, #f4f4f4), color-stop(97%, #f3f3f3), color-stop(100%, #f2f2f2));
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #f9f9f9), color-stop(82%, #f8f8f8), color-stop(85%, #f7f7f7), color-stop(88%, #f6f6f6), color-stop(91%, whitesmoke), color-stop(94%, #f4f4f4), color-stop(97%, #f3f3f3), color-stop(100%, #f2f2f2));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, #f9f9f9 0%, #f8f8f8 82%, #f7f7f7 85%, #f6f6f6 88%, #f5f5f5 91%, #f4f4f4 94%, #f3f3f3 97%, #f2f2f2 100%);
+    background: -webkit-linear-gradient(left, #f9f9f9 0%, #f8f8f8 82%, #f7f7f7 85%, #f6f6f6 88%, whitesmoke 91%, #f4f4f4 94%, #f3f3f3 97%, #f2f2f2 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, #f9f9f9 0%, #f8f8f8 82%, #f7f7f7 85%, #f6f6f6 88%, #f5f5f5 91%, #f4f4f4 94%, #f3f3f3 97%, #f2f2f2 100%);
+    background: -o-linear-gradient(left, #f9f9f9 0%, #f8f8f8 82%, #f7f7f7 85%, #f6f6f6 88%, whitesmoke 91%, #f4f4f4 94%, #f3f3f3 97%, #f2f2f2 100%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, #f9f9f9 0%, #f8f8f8 82%, #f7f7f7 85%, #f6f6f6 88%, #f5f5f5 91%, #f4f4f4 94%, #f3f3f3 97%, #f2f2f2 100%);
+    background: -ms-linear-gradient(left, #f9f9f9 0%, #f8f8f8 82%, #f7f7f7 85%, #f6f6f6 88%, whitesmoke 91%, #f4f4f4 94%, #f3f3f3 97%, #f2f2f2 100%);
     /* IE10+ */
     background: linear-gradient(to right, #f9f9f9 0%, #f8f8f8 82%, #f7f7f7 85%, #f6f6f6 88%, #f5f5f5 91%, #f4f4f4 94%, #f3f3f3 97%, #f2f2f2 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#f2f2f2',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f2f2f2',GradientType=1 );
     /* IE6-9 */
   }
-  /* line 193, ../sass/screen.scss */
+  /* line 215, ../sass/screen.scss */
   section .wrap {
     padding: 80px 20px;
   }
 }
 @media (min-width: 991px) {
-  /* line 200, ../sass/screen.scss */
+  /* line 222, ../sass/screen.scss */
   section .wrap {
     padding: 80px 60px;
   }

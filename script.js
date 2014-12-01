@@ -28,7 +28,10 @@ $(document).ready(function(){
 				output += "</section>";
 			}
 
-			$(".content").html(output).fadeIn(300);
+			$(".content")
+				.hide()
+				.html(output)
+				.fadeIn(300);
 			$(".content:contains('mins')").html(function(_, html){
 				return html.replace(/(mins)/g, '<span>mins</span>');
 			});				
@@ -38,7 +41,7 @@ $(document).ready(function(){
 			$('.count').each(function () {
 			  var $this = $(this);
 			  jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
-			    duration: 1000,
+			    duration: 500,
 			    easing: 'swing',
 			    step: function () {
 			      $this.text(Math.ceil(this.Counter));
