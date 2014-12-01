@@ -1,21 +1,51 @@
 $(document).ready(function(){
 	$("nav").on("click", "li", function() {
+		$("nav li").removeClass("active");
+		$(this).addClass("active");
 		var dataRel = $(this).attr('data-rel');
-		console.log(dataRel);
+		if (dataRel == 0) {
+			$('body').removeClass("member").addClass("summary");
+		} else {
+			$('body').removeClass("summary").addClass("member");
+		}
 		$.getJSON('stats.json', function(json){
-			var data = json[dataRel];
-			$('.container #visits .data').html('<h1>' + data[0].count + '</h1>');
-			$('.container #visits .data').append('<h3>'+ data[0].countTxt +'</h3>');
-			$('.container #visits .data').append('<p>'+ data[0].participantsTxt +'</p>');
-			$('.container #visits .data').append('<h2>'+ data[0].participantCount +'</h2>');
-			$('.container #uniques .data').html('<h1>' + data[1].count + '</h1>');
-			$('.container #uniques .data').append('<h3>'+ data[1].countTxt +'</h3>');
-			$('.container #uniques .data').append('<p>'+ data[1].participantsTxt +'</p>');
-			$('.container #uniques .data').append('<h2>'+ data[1].participantCount +'</h2>');
-			$('.container #time .data').html('<h1>' + data[2].count + '</h1>');
-			$('.container #time .data').append('<h3>'+ data[2].countTxt +'</h3>');
-			$('.container #time .data').append('<p>'+ data[2].participantsTxt +'</p>');
-			$('.container #time .data').append('<h2>'+ data[2].participantCount +'</h2>');						
+			var data = json[dataRel],
+				dataLength = data.length;
+			var	output = "";
+			for (i = 0; i < data.length; i++) {
+				output += "<section>";
+				output += 	"<div class='wrap'>";
+				output += 	"<div class='icon-wrap'>";
+				output += 		"<div class='icon'></div>";
+				output += 	"</div>";
+				output += 	"<div class='data'>";
+				output += 		 "<h1 class='count'>" + data[i].count +"</h1>";
+				output += 		"<h3>" + data[i].countTxt + "</h3>";
+				output += 		"<p>"+ data[i].participantsTxt +"</p>";
+				output += 		"<h2 class='count'>"+ data[i].participantCount +"</h2>";
+				output += 	"</div>";
+				output += 	"</div>";
+				output += "</section>";
+			}
+
+			$(".content").html(output).fadeIn(300);
+			$(".content:contains('mins')").html(function(_, html){
+				return html.replace(/(mins)/g, '<span>mins</span>');
+			});				
+			$(".content:contains('min')").html(function(_, html){
+				return html.replace(/(min)/g, '<span>min</span>');
+			});
+			$('.count').each(function () {
+			  var $this = $(this);
+			  jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+			    duration: 1000,
+			    easing: 'swing',
+			    step: function () {
+			      $this.text(Math.ceil(this.Counter));
+			    }
+			  });
+			});		
+
 		});
 	});
 

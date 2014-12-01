@@ -60,7 +60,7 @@ h1 {
 	font: 90px $med-cond; 
 	line-height: .9em;
 	span {
-		margin-left:10px;
+		margin-left:-10px;
 		font-size: 30px;
 		text-transform: uppercase;
 		line-height: .9em;
@@ -70,9 +70,9 @@ h2 {
 	font: 26px $med-cond;
 	line-height: 1.4em;
 	span {
-		margin-left:5px;
 		font-size: 18px;
 		text-transform: uppercase;
+		line-height: 1.4em;
 	}	
 }
 h3 {
@@ -103,15 +103,18 @@ nav {
 		text-transform: uppercase;
 		text-align: center;
 		line-height: 50px;
+		background-color:$blue1;
+		color: $white;		
 	}
 	li.active {
-		background-color:$blue1;
-		color: $white;
+		background:none;
+		color: $black;
 	}	
 }
 section {
 	overflow: hidden;
 	margin: 0 auto;
+	@include bg-gradient-stacked;
 	.wrap {
 		padding: 80px 40px;
 	}
@@ -127,53 +130,50 @@ section {
 	}
 }
 
-
-#logins, #visits {
-	@include bg-gradient-stacked;
+section:nth-of-type(1) {
 	h1, h2 {
 		color: $blue1;
 	}	
 }
-#searches, #uniques {
-	@include bg-gradient-stacked;
+section:nth-of-type(2) {
 	h1, h2 {
 		color: $blue2;
 	}	
 }
-#views, #time {
+section:nth-of-type(3) {
 	h1, h2 {
 		color: $blue3;
 	}
 }
-#visits {
+.member section:nth-of-type(1) {
 	.icon {
 		width: 26px;
 	 	height: 26px; 
 	 	background-position: 0 0;
 	}
 }
-#uniques, #searches {
+section:nth-of-type(2) {
 	.icon {
 		width: 22px; 
 		height: 26px;
 		background-position: -26px 0;
 	}
 }
-#time {
+.member section:nth-of-type(3) {
 	.icon {
 		width: 32px; 
 		height: 32px;
 		background-position: -48px 0;
 	}
 }
-#logins {
+.summary section:nth-of-type(1) {
 	.icon {
 		width: 31px;
 		height: 32px;
 		background-position: -80px 0;
 	}
 }
-#views {
+.summary section:nth-of-type(3) {
 	.icon {
 		width: 47px;
 		height: 26px;
@@ -189,12 +189,10 @@ section {
 	section {
 		float: left;
 		width: 33%;
-		.wrap {
-			padding:80px 30px;
-		}
-	}
-	#visits, #uniques {
 		@include bg-gradient-floated;
+		.wrap {
+			padding:80px 20px;
+		}
 	}
 }
 @media (min-width: 991px) {
