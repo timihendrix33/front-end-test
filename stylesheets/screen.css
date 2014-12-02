@@ -80,40 +80,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   src: url("../fonts/3a605871-b94d-4161-a394-bb2cfc975df7.eot?#iefix") format("eot"), url("../fonts/aef05e22-e1d4-4e59-bc2e-a71c13c26cca.woff") format("woff"), url("../fonts/b785b1cf-24fa-44c9-8c93-d8e2d6912c47.ttf") format("truetype"), url("../fonts/5ab0c585-fb4b-43d9-abb0-b92f452b1284.svg#5ab0c585-fb4b-43d9-abb0-b92f452b1284") format("svg");
 }
 
-/* line 59, ../sass/screen.scss */
-* {
+/* line 52, ../sass/screen.scss */
+*, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 63, ../sass/screen.scss */
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-/* line 68, ../sass/screen.scss */
-.clearfix:after {
-  clear: both;
-}
-
-/* line 72, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 body {
   color: black;
   line-height: 1em;
   background: white;
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 h1 {
   font: 90px "helvetica neue medium condensed", Helvetica, sans-serif;
   line-height: .9em;
 }
-/* line 80, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 h1 span {
   margin-left: -10px;
   font-size: 30px;
@@ -121,32 +107,32 @@ h1 span {
   line-height: .9em;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 h2 {
   font: 26px "helvetica neue medium condensed", Helvetica, sans-serif;
   line-height: 1.4em;
 }
-/* line 90, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 h2 span {
   font-size: 18px;
   text-transform: uppercase;
   line-height: 1.4em;
 }
 
-/* line 96, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 h3 {
   font: 15px "helvetica neue medium condensed", Helvetica, sans-serif;
   text-transform: uppercase;
 }
 
-/* line 100, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 p {
   font: 12px "helvetica neue medium", Helvetica, sans-serif;
   opacity: .6;
   margin-top: 35px;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .container {
   margin: 15px auto;
   width: 90%;
@@ -154,14 +140,14 @@ p {
   position: relative;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 nav {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
-/* line 116, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 nav li {
   float: left;
   width: 50%;
@@ -173,13 +159,13 @@ nav li {
   background-color: #019ed8;
   color: white;
 }
-/* line 127, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 nav li.active {
   background: none;
   color: black;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 section {
   overflow: hidden;
   margin: 0 auto;
@@ -200,68 +186,68 @@ section {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f1f1f1',GradientType=0 );
   /* IE6-9 */
 }
-/* line 136, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 section .wrap {
   padding: 80px 40px;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 .icon-wrap {
   width: 40px;
   height: 40px;
   margin-bottom: 10px;
 }
-/* line 144, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .icon-wrap .icon {
   position: relative;
   background-image: url(../img/sprite.png);
   background-repeat: none;
 }
 
-/* line 152, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 section:nth-of-type(1) h1, section:nth-of-type(1) h2 {
   color: #019ed8;
 }
 
-/* line 157, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 section:nth-of-type(2) h1, section:nth-of-type(2) h2 {
   color: #0075b5;
 }
 
-/* line 162, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 section:nth-of-type(3) h1, section:nth-of-type(3) h2 {
   color: #00aeef;
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .member section:nth-of-type(1) .icon {
   width: 26px;
   height: 26px;
   background-position: 0 0;
 }
 
-/* line 174, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 section:nth-of-type(2) .icon {
   width: 22px;
   height: 26px;
   background-position: -26px 0;
 }
 
-/* line 181, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .member section:nth-of-type(3) .icon {
   width: 32px;
   height: 32px;
   background-position: -48px 0;
 }
 
-/* line 188, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .summary section:nth-of-type(1) .icon {
   width: 31px;
   height: 32px;
   background-position: -80px 0;
 }
 
-/* line 195, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .summary section:nth-of-type(3) .icon {
   width: 47px;
   height: 26px;
@@ -269,21 +255,41 @@ section:nth-of-type(2) .icon {
 }
 
 @media (min-width: 767px) {
-  /* line 203, ../sass/screen.scss */
+  /* line 190, ../sass/screen.scss */
   .container {
     width: 100%;
-    margin: 0 0 15px 0;
-    padding: 15px 15px 0 15px;
   }
-  /* line 207, ../sass/screen.scss */
+  /* line 192, ../sass/screen.scss */
   .container nav {
     width: 100%;
   }
 
-  /* line 211, ../sass/screen.scss */
+  /* line 196, ../sass/screen.scss */
+  .content {
+    background: red;
+    margin: 0 0 20px 0;
+  }
+  /* line 200, ../sass/screen.scss */
+  .content:after {
+    /* Or @extend clearfix */
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* line 207, ../sass/screen.scss */
+  .content-pad {
+    padding: 20px 0 20px 20px;
+  }
+  /* line 209, ../sass/screen.scss */
+  .content-pad section:last-of-type {
+    padding-right: 20px;
+  }
+
+  /* line 213, ../sass/screen.scss */
   section {
     float: left;
-    width: 33%;
+    width: 33.33%;
     background: #f9f9f9;
     /* Old browsers */
     background: -moz-linear-gradient(left, #f9f9f9 0%, #f8f8f8 82%, #f7f7f7 85%, #f6f6f6 88%, whitesmoke 91%, #f4f4f4 94%, #f3f3f3 97%, #f2f2f2 100%);
@@ -301,13 +307,13 @@ section:nth-of-type(2) .icon {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f2f2f2',GradientType=1 );
     /* IE6-9 */
   }
-  /* line 215, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   section .wrap {
     padding: 80px 20px;
   }
 }
 @media (min-width: 991px) {
-  /* line 222, ../sass/screen.scss */
+  /* line 224, ../sass/screen.scss */
   section .wrap {
     padding: 80px 60px;
   }
