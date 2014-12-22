@@ -19,32 +19,20 @@ $(document).ready(function(){
 				output += 		"<div class='icon'></div>";
 				output += 	"</div>";
 				output += 	"<div class='data'>";
-				if(data[i].count.indexOf("min") == -1) {
 				output += 		 "<h1 class='count'>" + data[i].count +"</h1>";
-				} else {
-				output += 		 "<h1 class='count'>" + data[i].count +"</h1><span>min</span>";
-				}	
 				output += 		"<h3>" + data[i].countTxt + "</h3>";
 				output += 		"<p>"+ data[i].participantsTxt +"</p>";
 				output += 		"<h2 class='count'>"+ data[i].participantCount +"</h2>";
 				output += 	"</div>";
 				output += 	"</div>";
 				output += "</section>";
-
-				var dataCount = data[i].count;
-				console.log(dataCount);
-				var removeMin = function(datacount) {
-					newDataCount = datacount.replace(/(min)/g, 'anything');
-					
-					// console.log(datacount);					
-				}
-				removeMin(dataCount);
-	
 			}
 			$(".content section").hide();
-			$(".content")
-				.html(output)
-				.fadeIn(1000);
+			$(".content").html(output);
+			$(".content section div")
+				.hide()
+				.fadeIn(500);
+
 			// $(".content:contains('mins')").html(function(_, html){
 			// 	return html.replace(/(mins)/g, '<span>mins</span>');
 			// });				
@@ -52,7 +40,7 @@ $(document).ready(function(){
 			// 	return html.replace(/(min)/g, '<span>min</span>');
 			// });
 			// if(".count")
-			// $(".count").counterUp();
+			$(".count").counterUp();
 
 
 
