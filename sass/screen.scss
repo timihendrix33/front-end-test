@@ -109,10 +109,15 @@ nav {
 		line-height: 50px;
 		background-color:$blue1;
 		color: $white;		
+		cursor: pointer;
 	}
 	li.active {
 		background:none;
 		color: $black;
+		&:hover {
+			background-color:$blue1;
+			color: $white;	
+		}
 	}	
 }
 section {

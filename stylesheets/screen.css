@@ -157,14 +157,20 @@ nav li {
   line-height: 50px;
   background-color: #019ed8;
   color: white;
+  cursor: pointer;
 }
-/* line 113, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 nav li.active {
   background: none;
   color: black;
 }
+/* line 117, ../sass/screen.scss */
+nav li.active:hover {
+  background-color: #019ed8;
+  color: white;
+}
 
-/* line 118, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 section {
   overflow: hidden;
   margin: 0 auto;
@@ -185,68 +191,68 @@ section {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f1f1f1',GradientType=0 );
   /* IE6-9 */
 }
-/* line 122, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 section .wrap {
   padding: 80px 40px;
 }
 
-/* line 126, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .icon-wrap {
   width: 40px;
   height: 40px;
   margin-bottom: 10px;
 }
-/* line 130, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .icon-wrap .icon {
   position: relative;
   background-image: url(../img/sprite.png);
   background-repeat: none;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 section:nth-of-type(1) h1, section:nth-of-type(1) h2 {
   color: #019ed8;
 }
 
-/* line 143, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 section:nth-of-type(2) h1, section:nth-of-type(2) h2 {
   color: #0075b5;
 }
 
-/* line 148, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 section:nth-of-type(3) h1, section:nth-of-type(3) h2 {
   color: #00aeef;
 }
 
-/* line 153, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .member section:nth-of-type(1) .icon {
   width: 26px;
   height: 26px;
   background-position: 0 0;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 section:nth-of-type(2) .icon {
   width: 22px;
   height: 26px;
   background-position: -26px 0;
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 .member section:nth-of-type(3) .icon {
   width: 32px;
   height: 32px;
   background-position: -48px 0;
 }
 
-/* line 174, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .summary section:nth-of-type(1) .icon {
   width: 31px;
   height: 32px;
   background-position: -80px 0;
 }
 
-/* line 181, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .summary section:nth-of-type(3) .icon {
   width: 47px;
   height: 26px;
@@ -254,28 +260,28 @@ section:nth-of-type(2) .icon {
 }
 
 @media (min-width: 767px) {
-  /* line 189, ../sass/screen.scss */
+  /* line 194, ../sass/screen.scss */
   .container {
     width: 100%;
   }
-  /* line 191, ../sass/screen.scss */
+  /* line 196, ../sass/screen.scss */
   .container .content-wrap {
     padding: 0 20px;
   }
-  /* line 193, ../sass/screen.scss */
+  /* line 198, ../sass/screen.scss */
   .container .content-wrap:after {
     /* Or @extend clearfix */
     content: "";
     display: table;
     clear: both;
   }
-  /* line 200, ../sass/screen.scss */
+  /* line 205, ../sass/screen.scss */
   .container nav {
     width: 100%;
     padding: 0 20px;
   }
 
-  /* line 206, ../sass/screen.scss */
+  /* line 211, ../sass/screen.scss */
   section {
     float: left;
     width: 33.33%;
@@ -296,13 +302,13 @@ section:nth-of-type(2) .icon {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f2f2f2',GradientType=1 );
     /* IE6-9 */
   }
-  /* line 210, ../sass/screen.scss */
+  /* line 215, ../sass/screen.scss */
   section .wrap {
     padding: 80px 20px;
   }
 }
 @media (min-width: 991px) {
-  /* line 217, ../sass/screen.scss */
+  /* line 222, ../sass/screen.scss */
   section .wrap {
     padding: 80px 60px;
   }
